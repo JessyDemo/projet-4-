@@ -69,7 +69,7 @@ function verifyInput (input) {
 }
 
 inputsToVerify.forEach( input => {
-   input.addEventListener('change', () => {
+   input.addEventListener('blur', () => {
       verifyInput(input)
    });
 });
