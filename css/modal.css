@@ -200,6 +200,10 @@ input {
   outline: none;
 }
 
+.formData:invalid {
+  border: 2px solid #e54858;
+}
+
 .errorText{
   color: #e54858;
   font-size: 0.9rem;
@@ -214,7 +218,7 @@ input {
   font-size: 20px;
   height: 48px;
 }
-.formData[data-error]::after {
+/* .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
   color: #e54858;
@@ -231,7 +235,7 @@ input {
 }
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
-}
+} */
 /* 
 input[data-error]::after {
     content: attr(data-error);
